@@ -4,8 +4,7 @@ let router = express.Router();
 
  //constasntes de rutas 
 const customers = require('../controllers/controller.js');
-const empleados = require('../controllers/empleado.js')
-const departamentos = require('../controllers/departamento.js');
+
 
 router.post('/api/customers/create', customers.create);
 router.get('/api/customers/all', customers.retrieveAllCustomers);

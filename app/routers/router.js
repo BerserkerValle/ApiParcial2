@@ -3,15 +3,11 @@ let express = require('express');
 let router = express.Router();
 
  //constasntes de rutas 
-const customers = require('../controllers/controller.js');
+
 const usuarios = require('../controllers/usuarios.js');
 const proyectos = require('../controllers/proyectos.js');
 const tareas = require('../controllers/tareas.js');
 
-router.post('/api/customers/create', customers.create);
-router.get('/api/customers/all', customers.retrieveAllCustomers);
-router.put('/api/customers/update/:id', customers.updateById);
-router.delete('/api/customers/delete/:id', customers.deleteById);
 
 router.post('/api/usuarios/create', usuarios.create);
 router.get('/api/usuarios/all', usuarios.retrieveAllUsuarios);
